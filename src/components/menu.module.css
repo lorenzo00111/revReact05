@@ -3,17 +3,56 @@
     padding: 0;
 }
 
-.menu{
+.menu {
+  height: 68px;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 20px;
-  font-size: 20px;
-  padding: 10px;
-  background-color: var(--light);
-  color: var(--azul);
+  gap: 36px;
+  font-size: 15px;
+  font-weight: 800;
+  letter-spacing: 0.4px;
+  padding: 10px 24px;
+  background: rgba(7, 13, 24, 0.94);
+  color: #fff;
   position: absolute;
+  z-index: 20;
   top: 0;
   left: 0;
-  width: 0;
+  width: 100%;
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.menu a {
+  position: relative;
+  padding: 24px 0 21px;
+  transition: color 180ms ease;
+}
+
+.menu a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 100%;
+  bottom: 14px;
+  height: 3px;
+  border-radius: 3px;
+  background: #55aaff;
+  transition: right 180ms ease;
+}
+
+.menu a:hover {
+  color: #55aaff;
+}
+
+.menu a:hover::after {
+  right: 0;
+}
+
+@media (max-width: 600px) {
+  .menu {
+    gap: 18px;
+    font-size: 13px;
+  }
 }

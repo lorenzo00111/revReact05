@@ -3,17 +3,22 @@ import { createBrowserRouter } from "react-router";
 import { RouterProvider } from "react-router/dom";
 import './index.css'
 import App from './App.jsx'
-import Charts from './charts.jsx';
+import Charts from './Charts.jsx';
+import Contact from './Contact.jsx';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element:<App/> ,
   },
-{
-  path: "/charts" ,
-  element:<Charts/>
-},
+  {
+    path: "/charts",
+    element:<Charts/> ,
+  },
+  {
+    path: "/contato",
+    element:<Contact/> ,
+  },
 ]);
 
 createRoot(document.getElementById('root')).render(

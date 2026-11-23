@@ -1,0 +1,39 @@
+.wrapCharts {
+    min-height: 100vh;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 110px 24px 50px;
+    background:
+        linear-gradient(145deg, rgba(5, 10, 20, 0.96), rgba(8, 9, 13, 0.92)),
+        url('https://upload.wikimedia.org/wikipedia/commons/a/ac/Arena_do_Gr%C3%AAmio_2014.jpg') center / cover fixed;
+    color: #fff;
+}
+
+.wrapBtns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 28px;
+}
+
+.btnChart {
+    border: 1px solid rgba(85, 170, 255, 0.55);
+    border-radius: 999px;
+    background: rgba(9, 20, 38, 0.88);
+    color: #fff;
+    padding: 12px 18px;
+    cursor: pointer;
+    font-weight: 800;
+    transition: 180ms ease;
+}
+
+.btnChart:hover,
+.btnChart:focus-visible {
+    background: #55aaff;
+    color: #07101e;
+    transform: translateY(-2px);
+}

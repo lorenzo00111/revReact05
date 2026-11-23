@@ -1,23 +1,39 @@
-:root{
-  --dark: #090909;
+:root {
+  --dark: #08090d;
   --light: #ffffff;
-  --azul: #225e9d;
-  --sombra: 0px 2px 10px #00000071;
+  --azul: #55aaff;
+  --sombra: 0px 8px 30px rgba(0, 0, 0, 0.35);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
 }
 
-body{
+html {
+  background: #08090d;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
   overflow-x: hidden;
+  background: #08090d;
 }
 
-*{
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-a{
+a {
   text-decoration: none;
   color: inherit;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
 }
 
 
